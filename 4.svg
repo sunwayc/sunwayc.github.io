@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" onload="startAnim()">
+  <!-- SMIL动画：1秒后触发动画结束事件，执行JS -->
+  <rect id="testRect" x="0" y="0" width="200" height="200" fill="red">
+    <animate
+      id="testAnim"
+      attributeName="width"
+      from="200" to="200"
+      dur="1s"
+      fill="freeze"
+      onend="alert('SMIL触发成功：' + document.domain)"
+    />
+  </rect>
+  <script type="text/javascript">
+    // 启动动画（确保动画执行）
+    function startAnim() {
+      document.getElementById('testAnim').beginElement();
+    }
+  </script>
+</svg>
