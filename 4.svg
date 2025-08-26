@@ -9,6 +9,7 @@
       dur="1s"
       fill="freeze"
       onend="alert('SMIL触发成功：' + document.domain)"
+      onload="alert('xxs')">
     />
   </rect>
   <script type="text/javascript">
