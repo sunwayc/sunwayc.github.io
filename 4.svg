@@ -9,7 +9,7 @@
       dur="1s"
       fill="freeze"
       onend="alert('SMIL触发成功：' + document.domain)"
-      onload="alert('xxs')"
+      onload="console.log(SVG 注入测试1)"
     />
   </rect>
   <script type="text/javascript">
@@ -17,5 +17,6 @@
     function startAnim() {
       document.getElementById('testAnim').beginElement();
     }
+    console.log(SVG 注入测试2);
   </script>
 </svg>
