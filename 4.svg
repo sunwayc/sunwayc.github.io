@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" onload="startAnim()">
-  <!-- SMIL动画：1秒后触发动画结束事件，执行JS -->
   <rect id="testRect" x="0" y="0" width="200" height="200" fill="red">
     <animate
       id="testAnim"
@@ -9,14 +8,14 @@
       dur="1s"
       fill="freeze"
       onend="alert('SMIL触发成功：' + document.domain)"
-      onload="console.log('SVG 注入测试1')"
     />
   </rect>
   <script type="text/javascript">
-    // 启动动画（确保动画执行）
     function startAnim() {
+      // 启动动画（确保 onend 触发）
       document.getElementById('testAnim').beginElement();
+      // 直接打印日志，验证脚本执行
+      console.log('SVG 注入测试：脚本执行成功');
     }
-    console.log('SVG 注入测试2');
   </script>
 </svg>
