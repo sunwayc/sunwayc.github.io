@@ -7,5 +7,5 @@ $log = date("Y-m-d H:i:s") . " | " .
 file_put_contents("leak.log", $log, FILE_APPEND);
 // 返回空白图片避免裂图
 header("Content-Type: image/png");
-echo file_get_contents("1x1.png"); // 提前准备1x1像素的空白png
+echo file_get_contents("1.png"); // 提前准备1x1像素的空白png
 ?>
